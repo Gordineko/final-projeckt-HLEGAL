@@ -1,0 +1,128 @@
+    //main
+    $main:#323264;
+    $alt:#46466E;
+    $soft: #686887;
+    //accent
+    $accent:#F0145A;
+    //active
+    $regular:#24A3FF;
+    $hover:#0085FF;
+    $active:#006CCF;
+    //grey
+    $bg:#F5F5FA;
+    $bg_alt:#EDEDF7;
+    $text:#B3B3BA;
+    $separasato:#E6E6F0;
+    //GARDIENT
+    $gradient:linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+    $soft:linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    $red:linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+    $supersoft:linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    $red_text:linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    .footer {
+        background: #F5F5FA;
+        padding: 30px 0 15px 0;
+        &__d-flex {
+            position: relative;
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 21px;
+        }
+        &__map {
+            display: flex;
+            margin-bottom: 21px;
+            flex-wrap: wrap;
+            align-items: center;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #323264;
+            a {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: $regular;
+            }
+            a:hover {
+                color: $accent;
+            }
+            address {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #323264;
+            }
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #B3B3BA;
+            text-align: center;
+        }
+        &__contact {
+            bottom: 0;
+            position: absolute;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #46466E;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .txt_link {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: #46466E;
+            }
+            a {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: $regular;
+            }
+            a:hover {
+                color: $accent;
+            }
+            .icon {
+                color: $regular;
+            }
+            .icon:hover {
+                color: $accent;
+            }
+            ._icon-circle-chevron-down-solid:before {
+                content: "\e900";
+                font-size: 42px;
+            }
+            ._icon-facebook-brands:before {
+                content: "\e901";
+                font-size: 24px;
+            }
+        }
+        svg {
+            margin: 0 10px;
+        }
+    }
+    
+    @media(max-width: 610px) {
+        .footer {
+            &__d-flex {
+                flex-direction: column;
+            }
+            &__map {
+                flex-direction: column;
+            }
+            &__contact {
+                flex-direction: column;
+                position: static;
+                margin-bottom: 30px;
+            }
+            svg {
+                display: none;
+            }
+        }
+    }

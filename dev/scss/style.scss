@@ -1,0 +1,126 @@
+@import 'header';
+@import './main/info';
+@import'./main/services';
+@import'./main/team';
+@import'./main/burger';
+@import'./main/swaper';
+@import'./main/partners';
+@import'./main/_publication';
+@import'./main/services_item';
+@import'./main/button';
+@import '_footer';
+//main
+$main:#323264;
+$alt:#46466E;
+$soft: #686887;
+//accent
+$accent:#F0145A;
+//active
+$regular:#24A3FF;
+$hover:#0085FF;
+$active:#006CCF;
+//grey
+$bg:#F5F5FA;
+$bg_alt:#EDEDF7;
+$text:#B3B3BA;
+$separasato:#E6E6F0;
+//GARDIENT
+$gradient:linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+$soft:linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+$red:linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+$supersoft:linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$red_text:linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.header_container {
+    overflow: hidden;
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 60px;
+    position: relative;
+}
+
+.container_services {
+    max-width: 1480px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.container {
+    overflow: hidden;
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.container_bg_gradient {
+    background: linear-gradient(37deg, #643e72 10%, #323264 40%);
+    border-radius: 0px 0px 12px 12px;
+}
+
+.container_bg {
+    background-color: $main;
+    position: relative;
+    z-index: -1;
+}
+
+.container_shadow1 {
+    margin: 0 auto;
+    height: 10px;
+    margin: 0 20px;
+    max-width: 1880;
+    background: #CACADB;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.container_shadow2 {
+    margin: 0 auto;
+    height: 10px;
+    margin: 0 40px;
+    max-width: 1880;
+    background: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 38px;
+    line-height: 46px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+@media(max-width:610px) {
+    .container {
+        padding: 0 30px;
+    }
+    .header_container {
+        padding: 0;
+    }
+    .container_services {
+        padding: 0 30px;
+    }
+}
